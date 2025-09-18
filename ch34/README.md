@@ -1,4 +1,4 @@
-# FastAPI Learning – ch31-34: Add HTTPException handling, Custom Exceptions, SQLAlchemy basics, and DB table creation
+# FastAPI Learning –  SQLAlchemy basics and DB table creation
 
 ## 1. Introduction
 
@@ -24,10 +24,11 @@ SQLAlchemy allows you to define database tables directly in Python using the **C
 from sqlalchemy import MetaData
 
 metadata = MetaData()  # Create a metadata object
-Each table is associated with this metadata:
+```
+* Each table is associated with this metadata:
 
+```
 python
-Copy code
 from sqlalchemy import Table, Column, Integer, String
 
 users = Table(
